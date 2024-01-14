@@ -1,6 +1,6 @@
 #init
 
-def consecutive_mismatches(str1, str2, threshold=3):
+def consecutive_mismatches(str1, str2, threshold=5):
     current_count = 0
     max_count = 1  # Initialize to 1 to handle the case of no consecutive mismatches
     total_count_threshold = 0  # Initialize count of consecutive mismatches with threshold
@@ -26,8 +26,7 @@ str1 = "xooooxxoxoxxxoxxoxoxoxxoooxoooooxxxxxxxoxxxxxooxxxxxxxxxxooxxxoooxxooxxx
 
 # Example usage
 desired_length = len(str1)
-pattern = "xoxxxoo"
-
+pattern = "oxxoox"
 repeated_string = generate_repeating_string(pattern, desired_length)
 print(f"Repeating String: {pattern}")
 
@@ -36,4 +35,4 @@ str2 = repeated_string
 max_count, current_count, total_count_threshold = consecutive_mismatches(str1, str2)
 print(f"Longest press for {pattern} is: {max_count}")
 # print(f"The current consecutive mismatch count is: {current_count}")
-print(f"Press of 3 or more count is: {total_count_threshold}")
+print(f"Press of 5 or more count is: {total_count_threshold}")
