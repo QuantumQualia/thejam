@@ -1,5 +1,3 @@
-# init
-
 def consecutive_mismatches(str1, str2, threshold=3):
     current_count = 0
     max_count = 1  # Initialize to 1 to handle the case of no consecutive mismatches
@@ -22,37 +20,18 @@ def generate_repeating_string(pattern, length):
 
 # Example usage
 str1 = "xooooxxoxoxxxoxxoxoxoxxoooxoooooxxxxxxxoxxxxxooxxxxxxxxxxooxxxoooxxooxxxxxoxxoxoxoxoxoxxxxxoxxoxoxoxoxoxxxooxoxxxxooxooxoxxooxxoxoxxoxooooooxoooxooxoooxxoxxoxooxxoxxxxxooxoxoxooxxxoxxoxooxxoxoooxoxoxxxxxxxooxxoxxxxoxooxoooxooxxxxxooxooxxxoxxxooxxxxoooxxoxxoxooooox"
+
+
+# Example usage
 desired_length = len(str1)
-
-def genpattern():
-    repeated_string = generate_repeating_string(pattern, desired_length)
-    print(f"Repeating String: {pattern}")
-
-def write_output():
-    print(f"Longest consecutive losses for {pattern} is: {max_count}")
-    # print(f"The current consecutive mismatch count is: {current_count}")
-    print(f"Threshold of 3 or more losses is: {total_count_threshold}")
-
-
-# use
-
-pattern = "oox"
-str2 = repeated_string
-max_count, current_count, total_count_threshold = consecutive_mismatches(str1, str2)
-write_output()
-
 pattern = "xxo"
-str2 = repeated_string
-max_count, current_count, total_count_threshold = consecutive_mismatches(str1, str2)
-write_output()
 
-pattern = "xox"
-str2 = repeated_string
-max_count, current_count, total_count_threshold = consecutive_mismatches(str1, str2)
-write_output()
+repeated_string = generate_repeating_string(pattern, desired_length)
+print(f"Repeating String: {pattern}")
 
-pattern = "oxo"
 str2 = repeated_string
-max_count, current_count, total_count_threshold = consecutive_mismatches(str1, str2)
-write_output()
 
+max_count, current_count, total_count_threshold = consecutive_mismatches(str1, str2)
+print(f"The length of the longest consecutive mismatch for {pattern} is: {max_count}")
+print(f"The current consecutive mismatch count is: {current_count}")
+print(f"The count of consecutive mismatches of 3 or more is: {total_count_threshold}")
