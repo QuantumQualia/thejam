@@ -41,3 +41,18 @@ str2 = repeated_string
 max_count, current_count, total_count_threshold = consecutive_mismatches(str1, str2)
 write_output()
 
+pattern = "xxo"
+str2 = repeated_string
+max_count, current_count, total_count_threshold = consecutive_mismatches(str1, str2)
+write_output()
+
+pattern = "xox"
+str2 = repeated_string
+max_count, current_count, total_count_threshold = consecutive_mismatches(str1, str2)
+write_output()
+
+pattern = "oxo"
+str2 = repeated_string
+max_count, current_count, total_count_threshold = consecutive_mismatches(str1, str2)
+write_output()
+
