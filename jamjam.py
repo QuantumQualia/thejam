@@ -26,7 +26,7 @@ str1 = "xooooxxoxoxxxoxxoxoxoxxoooxoooooxxxxxxxoxxxxxooxxxxxxxxxxooxxxoooxxooxxx
 
 # Example usage
 desired_length = len(str1)
-pattern = "oxxoox"
+pattern = "oxoxooxx"
 repeated_string = generate_repeating_string(pattern, desired_length)
 print(f"Repeating String: {pattern}")
 
